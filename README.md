@@ -42,6 +42,7 @@ cd HackingBot
 
 ### 🔹 Step 2: Install Dependencies
 ```bash
+pip install termcolor
 chmod +x install_tools.sh
 ./install_tools.sh
 ```
