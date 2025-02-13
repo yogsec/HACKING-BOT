@@ -1,0 +1,30 @@
+# Reconnaissance
+subfinder -d (domain here) -o subdomains.txt
+amass enum -d (domain here) -o amass_output.txt
+cat subdomains.txt | httprobe > live_hosts.txt
+
+# Port Scanning
+nmap -p- -T4 -A -v (domain here) -oN nmap_scan.txt
+masscan -p1-65535,U:1-65535 --rate=1000 -oL masscan_output.txt --output-format text (domain here)
+
+# Web Scanning
+nikto -h (domain here) -output nikto_scan.txt
+whatweb (domain here) > whatweb_output.txt
+wafw00f (domain here) > wafw00f_output.txt
+
+# Directory and File Enumeration
+gobuster dir -u http://(domain here) -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -o gobuster_output.txt
+feroxbuster -u http://(domain here) -o feroxbuster_output.txt
+
+# Vulnerability Scanning
+sqlmap -u http://(domain here)/index.php?id=1 --batch --dbs --output=sqlmap_output.txt
+nuclei -target (domain here) -o nuclei_output.txt
+
+# Exploitation
+xsstrike -u http://(domain here) > xsstrike_output.txt
+ffuf -u http://(domain here)/FUZZ -w /usr/share/wordlists/rockyou.txt -o ffuf_output.txt
+
+# Post-Exploitation Analysis
+waybackurls (domain here) > wayback_output.txt
+gf xss wayback_output.txt > xss_output.txt
+gf sqli wayback_output.txt > sqli_output.txt
