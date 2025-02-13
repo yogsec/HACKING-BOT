@@ -2,6 +2,8 @@
 
 HACKING BOT is an **automated bug bounty tool** that streamlines security testing by running multiple cybersecurity tools in parallel. It allows you to customize the tools list and automate reconnaissance, scanning, exploitation, and post-exploitation analysis.
 
+![HACKING BOT](https://github.com/yogsec/HACKING-BOT/blob/main/Screenshot%20from%202025-02-13%2017-16-44.png?raw=true)
+
 ---
 
 ## 🎯 Features
