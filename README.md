@@ -51,7 +51,7 @@ chmod +x install_tools.sh
 
 ### 🔹 Step 3: Run the Tool
 ```bash
-python bug_bounty.py -d example.com
+python main.py -d example.com
 ```
 
 ---
@@ -60,11 +60,11 @@ python bug_bounty.py -d example.com
 
 ### 🏷 Basic Usage
 ```bash
-python bug_bounty.py -d <domain>
+python main.py -d <domain>
 ```
 Example:
 ```bash
-python bug_bounty.py -d google.com
+python main.py -d google.com
 ```
 
 ### 🔹 Advanced Options
@@ -77,7 +77,7 @@ python bug_bounty.py -d google.com
 
 Example using a custom tools file:
 ```bash
-python bug_bounty.py -d example.com -c advanced-tools.txt
+python main.py -d example.com -c advanced-tools.txt
 ```
 
 ---
