@@ -8,7 +8,6 @@ nmap -p- -T4 -A -v (domain here) -oN nmap_scan.txt
 masscan -p1-65535,U:1-65535 --rate=1000 -oL masscan_output.txt --output-format text (domain here)
 
 # Web Scanning
-nikto -h (domain here) -output nikto_scan.txt
 whatweb (domain here) > whatweb_output.txt
 wafw00f (domain here) > wafw00f_output.txt
 
