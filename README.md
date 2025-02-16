@@ -38,7 +38,7 @@ HACKING BOT is an **automated bug bounty tool** that streamlines security testin
 
 ### 🔹 Step 1: Clone the Repository
 ```bash
-git clone [https://github.com/YogSec/HackingBot.git](https://github.com/yogsec/HACKING-BOT)
+git clone https://github.com/YogSec/HACKING_BOT.git
 cd HACKING-BOT
 ```
 
